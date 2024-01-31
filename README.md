@@ -32,3 +32,19 @@ features a two-screen structure, where the first screen shows basic information 
    ```
 
 2. Navigate to the folder
+
+   ```bash
+   cd quadB-assignment
+   ```
+
+3. Install the packages
+
+```bash
+   npm install
+```
+
+4. Run by following command
+
+```bash
+   npm run dev
+```
