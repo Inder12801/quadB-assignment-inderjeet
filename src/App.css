@@ -265,9 +265,11 @@ label {
   }
   .movie-summary-details {
     flex-direction: column;
+    gap: 10px;
   }
   .movie-details-subdiv {
     align-items: center;
+    padding-left: 0px;
   }
   .movie-summary {
     flex-direction: column;
