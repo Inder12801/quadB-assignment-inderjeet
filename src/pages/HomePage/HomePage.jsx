@@ -19,7 +19,7 @@ const HomePage = () => {
   }, []);
   return (
     <div className="home-page">
-      <h1 className="movies-heading">Movies</h1>
+      <h2 className="movies-heading">Movies</h2>
       <div className="movies">
         {movies.map((movie) => (
           <MovieCard key={movie.show.id} show={movie.show} />

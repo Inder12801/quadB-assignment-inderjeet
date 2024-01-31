@@ -18,8 +18,21 @@ const BookingFormModal = ({ handleCloseModal, showModal, name }) => {
 
   const handleBookNow = () => {
     // Handle booking logic here, you can send the form data to the server, etc.
+    if (!formData.name || !formData.email || !formData.numberOfTickets) {
+      alert("Please fill in all fields");
+      return;
+    }
     console.log("Booking submitted:", formData);
+
+    // save to local storage and clear form
+    localStorage.setItem("bookingDetails", formData);
+    setFormData({
+      name: "",
+      email: "",
+      numberOfTickets: 1,
+    });
     handleCloseModal(); // Close the modal after booking
+    alert("Booking submitted");
   };
 
   return (

@@ -16,12 +16,12 @@ const MoviePage = () => {
   };
 
   return (
-    <div className="movie-page">
+    <div className={`movie-page ${showModal ? "blurry-bg" : ""}`}>
       <div className="movie-summary-details">
         <div>
           <img src={show?.image?.medium} alt={show?.name} />
         </div>
-        <div>
+        <div className="movie-details-subdiv">
           <h2>{show?.name}</h2>
           <p>
             <strong>Type:</strong> {show?.type}
@@ -32,18 +32,14 @@ const MoviePage = () => {
           <p>
             <strong>Genres:</strong> {show?.genres?.join(", ")}
           </p>
-          <p>
-            <strong>Status:</strong> {show?.status}
-          </p>
+
           <p>
             <strong>Runtime:</strong> {show?.runtime} minutes
           </p>
           <p>
             <strong>Premiered:</strong> {show?.premiered}
           </p>
-          <p>
-            <strong>Ended:</strong> {show?.ended}
-          </p>
+
           <p>
             <strong>Official Site:</strong>{" "}
             <a
@@ -61,7 +57,16 @@ const MoviePage = () => {
           <p>
             <strong>Average Rating:</strong> {show?.rating?.average}
           </p>
-
+        </div>
+        {/* //summary
+         */}
+        <div className="movie-summary">
+          <h3>Summary</h3>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: show?.summary,
+            }}
+          />
           <button className="btn" variant="primary" onClick={handleBookTicket}>
             Book a Ticket
           </button>
@@ -72,6 +77,7 @@ const MoviePage = () => {
       <BookingFormModal
         handleCloseModal={handleCloseModal}
         showModal={showModal}
+        name={show?.name}
       />
     </div>
   );
