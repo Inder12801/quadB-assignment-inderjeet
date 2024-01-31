@@ -49,7 +49,7 @@ features a two-screen structure, where the first screen shows basic information 
    npm run dev
 ```
 
-**Usage**
--Browse the list of TV shows on the Show List Screen.
--Click on a show to view its detailed summary on the Show Details Screen.
--On the Show Details Screen, click the "Book Ticket" button to open a form for booking movie tickets.
+- **Usage:**
+  - Browse the list of TV shows on the Show List Screen.
+  - Click on a show to view its detailed summary on the Show Details Screen.
+  - On the Show Details Screen, click the "Book Ticket" button to open a form for booking movie tickets.
