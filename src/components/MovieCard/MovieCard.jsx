@@ -1,11 +1,12 @@
-import React, { Children } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const MovieCard = (props) => {
   const { show } = props;
   const navigate = useNavigate();
 
   const handleRedirect = () => {
+    // redirect to movie page with show as state
     navigate(`/movie/${show?.id}`, {
       state: show,
     });
@@ -16,6 +17,7 @@ const MovieCard = (props) => {
       <img
         src={
           show?.image?.medium ||
+          show?.image?.original ||
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
         }
         alt={show?.name}

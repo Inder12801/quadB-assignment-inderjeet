@@ -49,7 +49,7 @@ const BookingFormModal = ({ handleCloseModal, showModal, name }) => {
         <Modal.Header closeButton>
           <Modal.Title>Book Ticket</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="modal-content">
           <form>
             <div className="form-group">
               <label htmlFor="name">Name:</label>
@@ -92,13 +92,13 @@ const BookingFormModal = ({ handleCloseModal, showModal, name }) => {
         </Modal.Body>
         <Modal.Footer>
           <Button
-            className="btn"
+            className="btn cancel"
             variant="secondary"
             onClick={handleCloseModal}
           >
             Close
           </Button>
-          <Button className="btn" variant="primary" onClick={handleBookNow}>
+          <Button className="btn " variant="primary" onClick={handleBookNow}>
             Book Now
           </Button>
         </Modal.Footer>

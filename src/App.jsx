@@ -10,7 +10,6 @@ function App() {
       <TopBar />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-
         <Route exact path="/movie/:id" element={<MoviePage />} />
       </Routes>
     </BrowserRouter>

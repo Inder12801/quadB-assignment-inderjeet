@@ -120,12 +120,15 @@ a {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  width: 500px;
+  /* width: 400px; */
 }
 .movie-summary {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.movie-summary h3 {
+  font-weight: 600;
 }
 
 .blurry-bg {
@@ -156,6 +159,8 @@ a {
 
 .modal-title {
   font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .modal-body {
@@ -178,8 +183,14 @@ label {
   border: 1px solid #ced4da;
 }
 
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .btn {
-  background-color: rgb(75, 181, 75);
+  background-color: #4bb54b;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -198,6 +209,38 @@ label {
 .btn:hover {
   background-color: rgb(9, 62, 9);
 }
+
+.cancel {
+  background-color: red;
+}
+
+.cancel:hover {
+  background-color: rgb(105, 37, 37);
+}
+
+/* --------Loader---------- */
+
+/* LoadingSpinner.css */
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #4bb54b;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----------Media Query--------- */
 
 @media (max-width: 600px) {
   .movies {
@@ -222,5 +265,17 @@ label {
   }
   .movie-summary-details {
     flex-direction: column;
+  }
+  .movie-details-subdiv {
+    align-items: center;
+  }
+  .movie-summary {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal {
+    top: 50%;
+    left: 0%;
+    /* transform: translate(-50%, -50%); */
   }
 }
