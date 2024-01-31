@@ -1,6 +1,6 @@
-# TV Shows Explorer
+# Moviespur
 
-**TV Shows Explorer** is a React JS application that utilizes the TVMaze API to display a list of shows and their details. It is completely responsive web design for mobile devices.
+**Moviespur** is a React JS application that utilizes the TVMaze API to display a list of shows and their details. It is completely responsive web design for mobile devices.
 
 features a two-screen structure, where the first screen shows basic information about each show, and the second screen displays a detailed summary of a selected show. Users can also book movie tickets for a chosen show through a form.
 
@@ -48,3 +48,8 @@ features a two-screen structure, where the first screen shows basic information 
 ```bash
    npm run dev
 ```
+
+**Usage**
+-Browse the list of TV shows on the Show List Screen.
+-Click on a show to view its detailed summary on the Show Details Screen.
+-On the Show Details Screen, click the "Book Ticket" button to open a form for booking movie tickets.
