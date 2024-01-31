@@ -120,7 +120,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  /* width: 400px; */
+  min-width: 280px;
 }
 .movie-summary {
   display: flex;
@@ -242,7 +242,7 @@ label {
 
 /* ----------Media Query--------- */
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .movies {
     grid-template-columns: 1fr;
   }

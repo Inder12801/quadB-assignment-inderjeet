@@ -41,16 +41,6 @@ const MoviePage = () => {
           </p>
 
           <p>
-            <strong>Official Site:</strong>{" "}
-            <a
-              href={show?.officialSite}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {show?.officialSite}
-            </a>
-          </p>
-          <p>
             <strong>Schedule:</strong> {show?.schedule?.days?.join(", ")} at{" "}
             {show?.schedule?.time}
           </p>
