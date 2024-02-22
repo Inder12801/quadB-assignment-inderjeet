@@ -51,7 +51,6 @@ a {
 .movie-card {
   display: flex;
 
-  /* height: 350px; */
   gap: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
